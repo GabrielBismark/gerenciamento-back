@@ -107,23 +107,7 @@ const buscarUsers = (nome) => {
       resolve(results);
     });
   });
-};
-
-// VULNERAVEL!!
-// const buscarUsers = (nome) => {
-//   return new Promise((resolve, reject) => {
-//     let query = `SELECT * FROM user WHERE nome LIKE '%${nome}%'`;
-//     connection.query(query, (err, results) => {
-//       if (err) {
-//         console.error('Erro ao executar a query:', err);
-//         reject(err);
-//       } else {
-//         resolve(results);
-//       }
-//     });
-//   });
-// };
-
+};;
 
 // Função para editar um user
 const editarUser = (id, nome, email, senha, cargo, setor) => {
